@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi.</h1>
+    <button class="offbtn">Off</button>
+    <button class="onbtn">On</button>
+    <button class="allbtn">All in one</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $(".offbtn").click(function(){
+        //         $('.one').hide();
+        //     });
+
+        //     $(".onbtn").click(function(){
+        //         $('.one').show();
+        //     });
+        // });
+        $(document).ready(function(){
+            $('.allbtn').click(function(){
+                $('.one').toggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>
+
